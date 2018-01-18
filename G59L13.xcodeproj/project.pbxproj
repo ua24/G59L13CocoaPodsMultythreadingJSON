@@ -12,6 +12,7 @@
 		4C010AD720110BB90019ACBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C010AD520110BB90019ACBF /* Main.storyboard */; };
 		4C010AD920110BB90019ACBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C010AD820110BB90019ACBF /* Assets.xcassets */; };
 		4C010ADC20110BB90019ACBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C010ADA20110BB90019ACBF /* LaunchScreen.storyboard */; };
+		4C010AE42011100E0019ACBF /* ImageDownloader4000.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010AE32011100E0019ACBF /* ImageDownloader4000.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4C010AD820110BB90019ACBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C010ADB20110BB90019ACBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C010ADD20110BB90019ACBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C010AE32011100E0019ACBF /* ImageDownloader4000.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader4000.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				4C010AD820110BB90019ACBF /* Assets.xcassets */,
 				4C010ADA20110BB90019ACBF /* LaunchScreen.storyboard */,
 				4C010ADD20110BB90019ACBF /* Info.plist */,
+				4C010AE32011100E0019ACBF /* ImageDownloader4000.swift */,
 			);
 			path = G59L13;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C010AE42011100E0019ACBF /* ImageDownloader4000.swift in Sources */,
 				4C010AD420110BB90019ACBF /* ViewController.swift in Sources */,
 				4C010AD220110BB90019ACBF /* AppDelegate.swift in Sources */,
 			);

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +13,45 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="G59L13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X31-FO-Men">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="vI9-n4-hzc"/>
+                                    <barButtonItem title="Item" id="hs5-7c-EYF"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kik-RF-Dre"/>
+                                    <barButtonItem title="Item" id="chJ-8D-egv">
+                                        <connections>
+                                            <action selector="loadImage:" destination="BYZ-38-t0r" id="hoz-xe-uNc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-Op-ZMV">
+                                <rect key="frame" x="0.0" y="186" width="320" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ghW-EU-jkN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="X31-FO-Men" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DTm-we-dZg"/>
+                            <constraint firstItem="T7q-Op-ZMV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="aJn-d5-TDN"/>
+                            <constraint firstItem="X31-FO-Men" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aQK-zG-dzL"/>
+                            <constraint firstItem="X31-FO-Men" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gFw-BL-3F8"/>
+                            <constraint firstItem="T7q-Op-ZMV" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="l7r-jH-rl8"/>
+                            <constraint firstItem="T7q-Op-ZMV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wlP-IS-dG5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageBox" destination="T7q-Op-ZMV" id="4Da-Sf-x9D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
