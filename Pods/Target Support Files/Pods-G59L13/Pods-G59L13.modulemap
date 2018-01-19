@@ -1,0 +1,6 @@
+framework module Pods_G59L13 {
+  umbrella header "Pods-G59L13-umbrella.h"
+
+  export *
+  module * { export * }
+}

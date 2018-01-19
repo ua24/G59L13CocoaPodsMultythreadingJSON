@@ -13,6 +13,7 @@
 		4C010AD920110BB90019ACBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C010AD820110BB90019ACBF /* Assets.xcassets */; };
 		4C010ADC20110BB90019ACBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C010ADA20110BB90019ACBF /* LaunchScreen.storyboard */; };
 		4C010AE42011100E0019ACBF /* ImageDownloader4000.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010AE32011100E0019ACBF /* ImageDownloader4000.swift */; };
+		6AC3439D0D9CB82E88F64AD8 /* Pods_G59L13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDD75128ACE414F25EA8593 /* Pods_G59L13.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		4C010ADB20110BB90019ACBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C010ADD20110BB90019ACBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C010AE32011100E0019ACBF /* ImageDownloader4000.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader4000.swift; sourceTree = "<group>"; };
+		8CDD75128ACE414F25EA8593 /* Pods_G59L13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_G59L13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29EC6AA9AC1B92C12B9363E /* Pods-G59L13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-G59L13.debug.xcconfig"; path = "Pods/Target Support Files/Pods-G59L13/Pods-G59L13.debug.xcconfig"; sourceTree = "<group>"; };
+		CAE5CEFDFD90C87E1158F046 /* Pods-G59L13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-G59L13.release.xcconfig"; path = "Pods/Target Support Files/Pods-G59L13/Pods-G59L13.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC3439D0D9CB82E88F64AD8 /* Pods_G59L13.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FA6630913C87BB232C96019 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD75128ACE414F25EA8593 /* Pods_G59L13.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C010AC520110BB90019ACBF = {
 			isa = PBXGroup;
 			children = (
 				4C010AD020110BB90019ACBF /* G59L13 */,
 				4C010ACF20110BB90019ACBF /* Products */,
+				633D53A2212385089DC0E7CD /* Pods */,
+				0FA6630913C87BB232C96019 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = G59L13;
 			sourceTree = "<group>";
 		};
+		633D53A2212385089DC0E7CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A29EC6AA9AC1B92C12B9363E /* Pods-G59L13.debug.xcconfig */,
+				CAE5CEFDFD90C87E1158F046 /* Pods-G59L13.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C010AE020110BB90019ACBF /* Build configuration list for PBXNativeTarget "G59L13" */;
 			buildPhases = (
+				4FFDF1E47AEEA040535CE31F /* [CP] Check Pods Manifest.lock */,
 				4C010ACA20110BB90019ACBF /* Sources */,
 				4C010ACB20110BB90019ACBF /* Frameworks */,
 				4C010ACC20110BB90019ACBF /* Resources */,
+				42243290A611CBD64D7784BB /* [CP] Embed Pods Frameworks */,
+				9E71E407FFD1BE2C2B00B666 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42243290A611CBD64D7784BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-G59L13/Pods-G59L13-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-G59L13/Pods-G59L13-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FFDF1E47AEEA040535CE31F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-G59L13-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E71E407FFD1BE2C2B00B666 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-G59L13/Pods-G59L13-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C010ACA20110BB90019ACBF /* Sources */ = {
@@ -276,6 +361,7 @@
 		};
 		4C010AE120110BB90019ACBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A29EC6AA9AC1B92C12B9363E /* Pods-G59L13.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +377,7 @@
 		};
 		4C010AE220110BB90019ACBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE5CEFDFD90C87E1158F046 /* Pods-G59L13.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
